@@ -1,6 +1,7 @@
 import { cdnUrl, projectID } from './env.js';
 import { handleImage, handleParagraphs } from './utils.js';
 
+
 function init() {
     const urlString = window.location.search;
     const paramsUrl = new URLSearchParams(urlString);
@@ -13,6 +14,7 @@ function init() {
         burgerIcon.classList.toggle('burger');
         burgerIcon.classList.toggle('closemobilemenu');
     });
+
 
     if(pageValue === null) {
         getPosts(); 
